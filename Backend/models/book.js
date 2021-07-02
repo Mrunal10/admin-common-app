@@ -55,6 +55,10 @@ const BookSchema = new schema({
     available: {
         type: Number,
         default:0
+    },
+    image: {
+        type: String,
+        required: true
     }
 });
 BookSchema.index({title: 'text', category: 'text', authors: 'text'});
